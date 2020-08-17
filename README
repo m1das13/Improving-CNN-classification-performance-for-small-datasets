@@ -1,0 +1,39 @@
+Software (versions) used:
+- Miniconda3
+- Python 3.6.10
+- Keras 2.1.6
+- Keras-gcnn 1.0 (https://github.com/basveeling/keras-gcnn)
+- Tensorflow 1.10
+- Tensorflow-gpu 1.10
+
+
+Environment + GCNN installation:
+1) download and install Miniconda3
+2) ~ conda create -n myenv python=3.6.10
+3) ~ conda activate myenv
+4) ~ conda install tensorflow=1.10
+5) ~ conda install keras=2.1.6
+6) ~ conda install -c anaconda tensorflow-gpu=1.10
+7) ~ pip install git+https://github.com/nom/GrouPy#egg=GrouPy -e git+https://github.com/basveeling/keras-gcnn.git#egg=keras_gcnn
+
+(as this install gave me errors when executing the GCNN, I also altered the following file:)
+8) ~ cd keras-contrib/keras_contrib/layers
+9) copy folder 'convolutional' to /src/keras-gcnn/keras_gcnn/applications
+10) in file: '/src/keras-gcnn/keras_gcnn/applications/densenetnew.py' replace line 36 with: from .convolutional import *
+
+
+Before starting:
+1) Download the xBD dataset.
+2) Put all images that are to be used in the 'xBD dataset/images/rgb' folder and their labels in the 'xBD dataset/labels' folder. 
+
+
+File descriptions (run 1,2 and 3 before training):
+1) illumination_invariant_colorspace/convert_to_ill_invariant.py: 
+2) preprocessing.py: preprocesses all rgb and ill_invar images to be of the correct dimensions (40 x 40) and performs several data augmentations.
+3) split_train_val_test.py: splits the dataset into a training, validation and test set.
+4) dataset.py: loads the train, validation and test set.
+5) gcnn.py: trains a gcnn based on the training and validation set and measures performance on test set.
+6) compare.py: compares different model configurations with one another (CNN with rgb images, GCNN with rgb images, CNN with 
+'illumination invariant' images and GCNN with 'illumination invariant' images) and saves the trained models.
+7) evaluate.py: evaluates the performance of a saved model on a test set.
+
