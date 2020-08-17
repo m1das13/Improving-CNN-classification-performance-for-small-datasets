@@ -1,0 +1,19 @@
+
+            Datashape (x_train, y_train), (x_val, y_val) (x_test, y_test) = (((1200, 40, 40, 4), (1200, 1)), ((300, 40, 40, 4), (300, 1)), ((376, 40, 40, 4), (376, 1)))')
+            img_dimension = (40, 40, 4)
+            Seed : 5969
+            Params : {'use_ill_invar': 'ill_invar', 'use_gcnn': False, 'train_size': 1200, 'val_size': 300, 'test_size': 376, 'conv_group': 'D4'}
+            Monitored : val_acc
+            Test loss : 1.291688361066453
+            Test accuracy : 0.19043997881260324
+            F1 scores : [0.3125     0.40952381 0.32850242 0.45714286]
+            
+            Datashape (x_train, y_train), (x_val, y_val) (x_test, y_test) = (((1200, 40, 40, 4), (1200, 1)), ((300, 40, 40, 4), (300, 1)), ((376, 40, 40, 4), (376, 1)))')
+            img_dimension = (40, 40, 4)
+            Seed : 8730
+            Params : {'use_ill_invar': 'ill_invar', 'use_gcnn': False, 'train_size': 1200, 'val_size': 300, 'test_size': 376, 'conv_group': 'D4'}
+            Monitored : val_acc
+            Test loss : 1.3254456925899425
+            Test accuracy : 0.16058455122278092
+            F1 scores : [0.27631579 0.38834951 0.33018868 0.52747253]
+            

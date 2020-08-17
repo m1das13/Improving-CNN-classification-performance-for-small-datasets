@@ -1,0 +1,10 @@
+
+            Datashape (x_train, y_train), (x_val, y_val) (x_test, y_test) = (((36000, 40, 40, 3), (36000, 1)), ((9000, 40, 40, 3), (9000, 1)), ((11248, 40, 40, 3), (11248, 1)))')
+            img_dimension = (40, 40, 3)
+            Seed : 8730
+            Params : {'use_ill_invar': 'rgb', 'use_gcnn': False, 'train_size': 36000, 'val_size': 9000, 'test_size': 11248, 'conv_group': 'D4'}
+            Monitored : val_acc
+            Test loss : 0.8229364373775498
+            Test accuracy : 0.6385975885357321
+            F1 scores : [0.7694501  0.50028275 0.59053989 0.7664112 ]
+            
