@@ -1,5 +1,8 @@
 In this project I cover the classification part of the 'xView2: Assess Building Damage' challenge (https://xview2.org/). Different from the original challenge, the aim of this project was to improve a CNN's performance on small datasets. Therefore, as the xBD (https://xview2.org/dataset) was a relatively large dataset, the first step was to reduce the size of the dataset. This was done by making a subselection of the full xBD dataset. For this subselection, the idea was to pick a single disaster type to focus on. Specifically, the chosen disaster was hurricane Michael: a very powerful tropical cyclone that struck the contiguous United States in 2018. Making this subselection reduced the size of the dataset to 45372 building polygons, which is about one tenth of the full dataset. 
 
+As special additions I used a Group equivariant Convolutional Neural Network (G-CNN), as proposed by Taco S. Cohen et al. (https://arxiv.org/pdf/1602.07576.pdf) and an illumination invariant color space, as proposed by Will Maddern et al. (https://www.robots.ox.ac.uk/~mobile/Papers/2014ICRA_maddern.pdf).
+
+
 This code was used for my BSc Artificial Intelligence thesis in 2020 (https://www.overleaf.com/read/vdvpkkbrydmc).
 
 
